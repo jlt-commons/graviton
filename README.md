@@ -14,7 +14,6 @@ death zones will be spawned on the screen.
 
     jolt -M:test
 
-The suite runs unit tests plus [writ](https://github.com/jlt-commons/writ)
-specs: `graviton.physics-spec` and
-`graviton.world-spec` state the field math and the round's state graph as
+The suite uses [writ](https://github.com/jlt-commons/writ)
+specs to encode the field math and the round's state graph as
 checkable laws.
