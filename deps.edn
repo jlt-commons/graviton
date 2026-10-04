@@ -1,0 +1,16 @@
+{:paths ["src"]
+
+ ;; raylib over its C ABI via jolt.ffi. Homebrew's lib dir is not on Chez's
+ ;; default dlopen search path, so the absolute path is listed first.
+ :jolt/native [{:name "raylib"
+                :darwin ["/opt/homebrew/lib/libraylib.dylib" "libraylib.dylib"]
+                :linux  ["libraylib.so.6" "libraylib.so"]}]
+
+ :aliases
+ {:test {:extra-paths ["test"]
+         :extra-deps  {io.github.jlt-commons/writ
+                       {:git/url "https://github.com/jlt-commons/writ"
+                        :git/tag "v0.1.2"
+                        :git/sha "57d863b290e7abe9f2918f969c2a6c74ee6d5a21"}}
+         :main-opts   ["-m" "graviton.test-runner"]}
+  :run  {:main-opts ["-m" "graviton.main"]}}}

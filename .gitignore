@@ -1,0 +1,23 @@
+# vendored Box3D clone + build (restored with `jolt box3d`)
+vendor/
+
+# built shim (rebuilt with `jolt native`)
+native/*.dylib
+native/*.so
+
+# tool caches
+.jolt/
+.clj-kondo/
+.lsp/
+.cpcache/
+.writ-cache/
+.nrepl-port
+
+# os
+.DS_Store
+
+# scratch
+fast-volume.html
+graviton_smoke.png
+nose*.png
+tri_probe.png
