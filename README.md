@@ -17,3 +17,7 @@ death zones will be spawned on the screen.
 The suite uses [writ](https://github.com/jlt-commons/writ)
 specs to encode the field math and the round's state graph as
 checkable laws.
+
+## License
+
+EPL 2.0, the same license as Jolt and Clojure. See [LICENSE](LICENSE).
